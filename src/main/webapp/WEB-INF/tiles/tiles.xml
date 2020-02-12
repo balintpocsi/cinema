@@ -1,0 +1,57 @@
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <definition name="mainLayout" template="/WEB-INF/layout/main.jsp">
+        <put-attribute name="navigation_bar" value="" />
+        <put-attribute name="body" value="" />
+    </definition>
+
+    <definition name="register" extends="mainLayout">
+        <put-attribute name="navigation_bar" value="/WEB-INF/layout/navigation_bar.jsp" />
+        <put-attribute name="body" value="/WEB-INF/view/register.jsp" />
+    </definition>
+
+    <definition name="login" extends="mainLayout">
+        <put-attribute name="navigation_bar" value="/WEB-INF/layout/navigation_bar.jsp" />
+        <put-attribute name="body" value="/WEB-INF/view/login.jsp" />
+    </definition>
+
+    <definition name="details" extends="mainLayout">
+        <put-attribute name="navigation_bar" value="/WEB-INF/layout/navigation_bar_with_search_bar.jsp" />
+        <put-attribute name="body" value="/WEB-INF/view/details.jsp" />
+    </definition>
+
+    <definition name="index" extends="mainLayout">
+        <put-attribute name="navigation_bar" value="/WEB-INF/layout/navigation_bar_with_search_bar.jsp" />
+        <put-attribute name="body" value="/WEB-INF/view/index.jsp" />
+    </definition>
+
+    <definition name="upload" extends="mainLayout">
+        <put-attribute name="navigation_bar" value="/WEB-INF/layout/navigation_bar_with_search_bar.jsp" />
+        <put-attribute name="body" value="/WEB-INF/view/upload.jsp" />
+    </definition>
+
+    <definition name="friends_list" extends="mainLayout">
+        <put-attribute name="navigation_bar" value="/WEB-INF/layout/navigation_bar_with_search_bar.jsp" />
+        <put-attribute name="body" value="/WEB-INF/view/friends_list.jsp" />
+    </definition>
+
+    <definition name="watch_list" extends="mainLayout">
+        <put-attribute name="navigation_bar" value="/WEB-INF/layout/navigation_bar_with_search_bar.jsp" />
+        <put-attribute name="body" value="/WEB-INF/view/watch_list.jsp" />
+    </definition>
+
+    <definition name="item_search_results" extends="mainLayout">
+        <put-attribute name="navigation_bar" value="/WEB-INF/layout/navigation_bar_with_search_bar.jsp" />
+        <put-attribute name="body" value="/WEB-INF/view/item_search_results.jsp" />
+    </definition>
+
+    <definition name="user_search_results" extends="mainLayout">
+        <put-attribute name="navigation_bar" value="/WEB-INF/layout/navigation_bar_with_search_bar.jsp" />
+        <put-attribute name="body" value="/WEB-INF/view/user_search_results.jsp" />
+    </definition>
+
+</tiles-definitions>
