@@ -21,7 +21,7 @@ public class PersistenceConfig {
 
     @Bean
     public DataSource dataSource() {
-        return new DriverManagerDataSource("jdbc:postgres://dscadigrzigidb:c8a216d0c4213ca99bc5598d32e77d5d75769e2c895550b8550804d4788cd4f2@ec2-54-72-188-148.eu-west-1.compute.amazonaws.com:5432/dan7jqh01pp629", "dscadigrzigidb", "c8a216d0c4213ca99bc5598d32e77d5d75769e2c895550b8550804d4788cd4f2");
+        return new DriverManagerDataSource("jdbc:postgres://tfmokwmozxwkhg:c563c7872dee530e23be23630120aca53621f53fda6ae8f7068e89eaf74a680f@ec2-34-241-90-235.eu-west-1.compute.amazonaws.com:5432/d1kb3h7601e8lc", "tfmokwmozxwkhg", "c563c7872dee530e23be23630120aca53621f53fda6ae8f7068e89eaf74a680f");
     }
 
     @Bean
